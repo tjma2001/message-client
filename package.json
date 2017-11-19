@@ -1,0 +1,21 @@
+{
+  "name": "message-client",
+  "version": "1.0.0",
+  "description": "A message client that connects to a message broker and sends and receives messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "micro-service",
+    "messaging"
+  ],
+  "author": "Taariq Mullins",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "msgpack": "^1.0.2",
+    "rabbitmq-node": "^0.5.0",
+    "uniqid": "^4.1.1"
+  }
+}
