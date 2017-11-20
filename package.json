@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.2",
+    "async": "^2.6.0",
     "msgpack": "^1.0.2",
     "rabbitmq-node": "^0.5.0",
     "uniqid": "^4.1.1"
