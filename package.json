@@ -1,6 +1,6 @@
 {
   "name": "message-client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A message client that connects to a message broker and sends and receives messages",
   "main": "index.js",
   "scripts": {
