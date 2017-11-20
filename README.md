@@ -29,3 +29,8 @@ client.ask("notifications", { type: "request", message: "test message"}).then( r
 ```
 
 As you can see, two interfaces are provided. Tell and Ask. Tell is for fire and forget requests. Ask is when you wish to communicate with a service and want a reply back. Ask returns a promise.
+
+## Notes
+
+* Don't worry about message compression. All messages are compressed with MessagePack. 
+* Be careful of long running or slow Ask calls. For now the library will timeout after 30 seconds and reject the promise. Make sure you handle all rejected promises
