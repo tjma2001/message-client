@@ -1,5 +1,9 @@
 # message-client
 
+Install this package with NPM
+
+    npm install message-client
+
 This is a lightweight message client to be used when communicating with micro-services. The library is easy to use. 
 
 You before you start make sure you have your RABBIT_HOST environment variable set. This should be in the following format:
