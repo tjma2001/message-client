@@ -10,6 +10,16 @@ You before you start make sure you have your RABBIT_HOST environment variable se
 
     ampq://[username[:password:]@]host[:port]
 
+Take advantage of being able to use the same rabbitmq server for multiple different projects. Simply set the CONTEXT environment variable of your application. By default your context will be set to ```local.*```. So if you look at your rabbitmq queues
+
+```
+Every 2.0s: rabbitmqctl list_queues                                               b3df0772fafc: Thu Nov 30 20:56:18 2017
+
+Listing queues
+local-test      6
+local-test3     0
+```
+
 ## Usage
 
 The library is very simple to use. Take a look at this code example:
