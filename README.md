@@ -16,8 +16,8 @@ Take advantage of being able to use the same rabbitmq server for multiple differ
 Every 2.0s: rabbitmqctl list_queues                                               b3df0772fafc: Thu Nov 30 20:56:18 2017
 
 Listing queues
-local-test      6
-local-test3     0
+local.test      0
+local.test3     0
 ```
 
 ## Usage
