@@ -1,9 +1,16 @@
 # message-client
 
+## Note
+
+The project is currently being hosted on a private gitlab account and being transferred to github at some point. So for now please forgive the empty GIT repo. Please use the GIT repo to log any issues you might be having.
+
+## Install
+
 Install this package with NPM
 
     npm install message-client
 
+## What is this?
 This is a lightweight message client to be used when communicating with micro-services. The library is easy to use. It uses rabbitmq as the message transport. So you need to have a rabbitmq instance running. Get one at heroku or use AWS to provision one.
 
 You before you start make sure you have your RABBIT_HOST environment variable set. This should be in the following format:
@@ -60,8 +67,12 @@ As you can see, three interfaces are provided. *tell*, *ask*, *on* and *reply*. 
 
 On for now only allows you to listen for messages. Errors will be added soon. You can also reply to messages. You must include the original message when replying, otherwise it will not know what message it is replying to.
 
-## Notes
+## More Notes
 
 * Don't worry about message compression. All messages are compressed with MessagePack. 
 * Be careful of long running or slow Ask calls. For now the library will timeout after 30 seconds and reject the promise. Make sure you handle all rejected promises.
 * Do not reply to a message more than once.
+
+## Todo
+* Add a value to specify the timeout of a request
+* Allow for streaming data between services
