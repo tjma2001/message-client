@@ -31,11 +31,12 @@ const MessageClient = require("message-client")
 
 client.tell("notifications", { user: "userid", message: "this is the sample message" })
 
-client.ask("notifications", { type: "request", message: "test message"}).then( response => {
-    console.log(response.content)
-}).catch(error => {
-    console.error(error)
-})
+client.ask("notifications", { type: "request", message: "test message"})
+    .then( response => {
+        console.log(response.content)
+    }).catch(error => {
+        console.error(error)
+    })
 
 client.on("message", function(content, message) {
     console.log("I got a message", content)
